@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Palm-Chat</string>
+    <string name="home_screen">Home Screen</string>
+    <string name="go_to_chat_screen">Go to Chat Screen</string>
+</resources>
