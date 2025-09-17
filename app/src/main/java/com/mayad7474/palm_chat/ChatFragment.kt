@@ -18,7 +18,7 @@ class ChatFragment : Fragment(R.layout.fragment_chat) {
         recyclerView.layoutManager = LinearLayoutManager(context)
 
         // Legacy code: observing with activity lifecycle, causing crash
-        viewModel.messages.observe(requireActivity()) { msgs ->
+        viewModel.messages.observe(viewLifecycleOwner) { msgs ->
             recyclerView.adapter = MessagesAdapter(msgs)
         }
     }
