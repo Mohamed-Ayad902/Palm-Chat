@@ -42,7 +42,11 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.junit.ktx)
     testImplementation(libs.junit)
+    testImplementation(libs.runner)
+    androidTestImplementation(libs.runner)
+    androidTestImplementation(libs.androidx.rules)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
@@ -52,9 +56,9 @@ dependencies {
 
     testImplementation(libs.mockito.core)
     testImplementation(libs.androidx.core.testing)
+    testImplementation (libs.mockito.mockito.inline)
 
-    androidTestImplementation(libs.androidx.runner)
-    androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.fragment.testing)
+    debugImplementation(libs.androidx.fragment.testing)
 
 }
